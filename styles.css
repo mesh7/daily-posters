@@ -1,42 +1,76 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    color: black;
-    font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  font-family: "Fira Sans", sans-serif;
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
+body {
+  margin: 0px;
+  padding: 0;
+  background-color: grey;
 }
 
-.page-header {
-    font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
+a {
+  text-decoration: none;
 }
 
-.cards {
-    margin-top: 2rem;
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* justify-items: center; */
+.box {
+  width: 300px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.card {
-    width: 10rem;
-    height: 40rem;
-    background-color: white;
-    margin: auto;
-    border-radius: 0.5rem;
+.slide-img {
+  height: 450px;
 }
 
-.poster-image {
-    width: 540px;
-    height: 720px;
+.slide-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
+.detail-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.type {
+  display: flex;
+  flex-direction: column;
+}
+
+.type a {
+  color: #222222;
+  margin: 5px 0px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding-right: 8px;
+}
+
+.type span {
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  color: #222222;
+  font-weight: 600;
+  font-family: Poppins;
+  letter-spacing: 0.5px;
 }
